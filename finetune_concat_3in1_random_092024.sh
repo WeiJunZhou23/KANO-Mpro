@@ -1,0 +1,17 @@
+python train.py\
+    --data_path /scratch/wz2449/SolCuration/concat_3in1_train_031624.csv\
+    --separate_val_path /scratch/wz2449/SolCuration/concat_3in1_val_031624.csv\
+    --separate_test_path /scratch/wz2449/SolCuration/concat_3in1_test_031624.csv\
+    --dataset_type regression\
+    --split_type random\
+    --metric rmse\
+    --epochs 100\
+    --num_runs 1\
+    --gpu 0\
+    --batch_size 256\
+    --init_lr 5e-4\
+    --ensemble_size 5\
+    --step functional_prompt\
+    --exp_name finetune\
+    --exp_id concat_3in1\
+    --checkpoint_path "./dumped/pretrained_graph_encoder/original_CMPN_0623_1350_14000th_epoch.pkl"
