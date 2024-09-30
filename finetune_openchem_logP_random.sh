@@ -1,5 +1,5 @@
 python train.py\
-    --data_path /scratch/wz2449/sPhysNet-MT/sPhysNet-MT_022224/openchem_logP.csv\
+    --data_path ./data/logP/openchem_logP.csv\
     --dataset_type regression\
     --split_type random\
     --save_smiles_splits\
